@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Pantry Lane</title>
+  <meta name="description" content="Browse the Pantry Lane shop: oils, pasta, salts, sweets, snacks — all small-batch, all from producers we know by name." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================ HEADER ================ -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Pantry Lane<span class="dot"></span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <button class="cart-btn" aria-label="Open cart">
+            <span>Cart</span>
+            <span class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================ SHOP HERO ================ -->
+  <section class="shop-hero">
+    <div class="container">
+      <div class="shop-hero-inner">
+        <div class="reveal">
+          <span class="eyebrow">The shelf</span>
+          <h1 style="margin-top:14px;">Sixteen <em>essentials</em>.</h1>
+        </div>
+        <p class="lead reveal reveal-d2">A short, opinionated list — every item earns its spot. Filter by category to narrow it down.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ FILTER + GRID ================ -->
+  <section class="shop-grid" style="padding-top:0;">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <span class="filter-label">Filter</span>
+        <button class="filter-chip active" data-filter="all">All <span style="opacity:0.5;">16</span></button>
+        <button class="filter-chip" data-filter="oils">Oils & Vinegars</button>
+        <button class="filter-chip" data-filter="pasta">Pasta & Grains</button>
+        <button class="filter-chip" data-filter="salts">Salts & Spices</button>
+        <button class="filter-chip" data-filter="sweet">Sweet</button>
+        <button class="filter-chip" data-filter="snacks">Snacks</button>
+      </div>
+
+      <div class="product-grid reveal">
+
+        <article class="product-card" data-category="oils" data-id="oliveoil" data-name="Cold-pressed Olive Oil" data-price="24.00">
+          <div class="product-image" style="--fallback-1:#C8B989; --fallback-2:#7A6B3F;">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80" alt="Cold-pressed olive oil" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Oils · Italy</span>
+              <h3 class="product-name">Cold-pressed Olive Oil</h3>
+              <p class="product-desc">Single-estate, peppery. 500ml.</p>
+            </div>
+            <span class="product-price">$24</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="oils" data-id="balsamic" data-name="Aged Balsamic Vinegar" data-price="28.00">
+          <div class="product-image" style="--fallback-1:#5A2828; --fallback-2:#2A1010;">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80" alt="Aged balsamic vinegar" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Vinegars · Italy</span>
+              <h3 class="product-name">Aged Balsamic Vinegar</h3>
+              <p class="product-desc">12-year aged in oak. 250ml.</p>
+            </div>
+            <span class="product-price">$28</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pasta" data-id="bronzepasta" data-name="Bronze-cut Rigatoni" data-price="9.50">
+          <div class="product-image" style="--fallback-1:#E8C98E; --fallback-2:#8C6B30;">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Bronze-cut rigatoni pasta" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Pasta · Italy</span>
+              <h3 class="product-name">Bronze-cut Rigatoni</h3>
+              <p class="product-desc">Rough texture grabs sauce. 500g.</p>
+            </div>
+            <span class="product-price">$9.50</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pasta" data-id="spaghetti" data-name="Heritage Spaghetti" data-price="8.00">
+          <div class="product-image" style="--fallback-1:#E0B878; --fallback-2:#8C6830;">
+            <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=600&q=80" alt="Heritage spaghetti" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Pasta · Italy</span>
+              <h3 class="product-name">Heritage Spaghetti</h3>
+              <p class="product-desc">Ancient durum wheat. 500g.</p>
+            </div>
+            <span class="product-price">$8</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pasta" data-id="risotto" data-name="Carnaroli Rice" data-price="14.00">
+          <div class="product-image" style="--fallback-1:#ECE4CC; --fallback-2:#A8987C;">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80" alt="Carnaroli rice" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Grains · Italy</span>
+              <h3 class="product-name">Carnaroli Rice</h3>
+              <p class="product-desc">The chef's pick for risotto. 1kg.</p>
+            </div>
+            <span class="product-price">$14</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="salts" data-id="seasalt" data-name="Flaky Sea Salt" data-price="12.00">
+          <div class="product-image" style="--fallback-1:#E8E3D6; --fallback-2:#A8A091;">
+            <img src="https://images.unsplash.com/photo-1518110925495-b37653ab3fcd?auto=format&fit=crop&w=600&q=80" alt="Hand-harvested flaky sea salt" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Salts · France</span>
+              <h3 class="product-name">Flaky Sea Salt</h3>
+              <p class="product-desc">Hand-harvested. 250g jar.</p>
+            </div>
+            <span class="product-price">$12</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="salts" data-id="peppercorns" data-name="Tellicherry Peppercorns" data-price="11.00">
+          <div class="product-image" style="--fallback-1:#403225; --fallback-2:#1A1208;">
+            <img src="https://images.unsplash.com/photo-1599671654204-a1f7976bcc78?auto=format&fit=crop&w=600&q=80" alt="Tellicherry peppercorns" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Spices · India</span>
+              <h3 class="product-name">Tellicherry Peppercorns</h3>
+              <p class="product-desc">Bold, citrusy whole berries. 100g.</p>
+            </div>
+            <span class="product-price">$11</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="salts" data-id="paprika" data-name="Smoked Paprika" data-price="9.00">
+          <div class="product-image" style="--fallback-1:#B8442A; --fallback-2:#7A2A12;">
+            <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=600&q=80" alt="Smoked paprika" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Spices · Spain</span>
+              <h3 class="product-name">Smoked Paprika</h3>
+              <p class="product-desc">Slow-smoked over oak. 80g tin.</p>
+            </div>
+            <span class="product-price">$9</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sweet" data-id="honey" data-name="Wildflower Honey" data-price="16.00">
+          <div class="product-image" style="--fallback-1:#E8B752; --fallback-2:#A87420;">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784e7c?auto=format&fit=crop&w=600&q=80" alt="Raw wildflower honey" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Sweet · Vermont</span>
+              <h3 class="product-name">Wildflower Honey</h3>
+              <p class="product-desc">Raw and unfiltered. 340g jar.</p>
+            </div>
+            <span class="product-price">$16</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sweet" data-id="maple" data-name="Dark Maple Syrup" data-price="22.00">
+          <div class="product-image" style="--fallback-1:#9A5A28; --fallback-2:#5C2C10;">
+            <img src="https://images.unsplash.com/photo-1581898561648-b0fa7b89cbcd?auto=format&fit=crop&w=600&q=80" alt="Dark maple syrup" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Sweet · Quebec</span>
+              <h3 class="product-name">Dark Maple Syrup</h3>
+              <p class="product-desc">Grade A robust. 500ml.</p>
+            </div>
+            <span class="product-price">$22</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sweet" data-id="chocolate" data-name="72% Dark Chocolate" data-price="8.50">
+          <div class="product-image" style="--fallback-1:#3E2014; --fallback-2:#1C0A05;">
+            <img src="https://images.unsplash.com/photo-1623535852280-0e2ae00e5c2c?auto=format&fit=crop&w=600&q=80" alt="72% dark chocolate" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Sweet · Ecuador</span>
+              <h3 class="product-name">72% Dark Chocolate</h3>
+              <p class="product-desc">Single-origin, bean-to-bar. 80g.</p>
+            </div>
+            <span class="product-price">$8.50</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="snacks" data-id="crackers" data-name="Sourdough Crackers" data-price="7.50">
+          <div class="product-image" style="--fallback-1:#D8B878; --fallback-2:#A88848;">
+            <img src="https://images.unsplash.com/photo-1486887396153-fa416526c108?auto=format&fit=crop&w=600&q=80" alt="Sourdough crackers" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Snacks · Brooklyn</span>
+              <h3 class="product-name">Sourdough Crackers</h3>
+              <p class="product-desc">Hand-snapped, salted. 200g.</p>
+            </div>
+            <span class="product-price">$7.50</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="snacks" data-id="almondbutter" data-name="Roasted Almond Butter" data-price="14.50">
+          <div class="product-image" style="--fallback-1:#C8A878; --fallback-2:#8A6838;">
+            <img src="https://images.unsplash.com/photo-1612207918266-9cd80d2f9f33?auto=format&fit=crop&w=600&q=80" alt="Roasted almond butter" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Snacks · California</span>
+              <h3 class="product-name">Roasted Almond Butter</h3>
+              <p class="product-desc">Almonds + a pinch of salt. 340g.</p>
+            </div>
+            <span class="product-price">$14.50</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="snacks" data-id="coffee" data-name="Single-origin Coffee" data-price="18.00">
+          <div class="product-image" style="--fallback-1:#5A3818; --fallback-2:#2A1808;">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" alt="Single-origin coffee beans" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Snacks · Ethiopia</span>
+              <h3 class="product-name">Single-origin Coffee</h3>
+              <p class="product-desc">Whole bean, light roast. 340g.</p>
+            </div>
+            <span class="product-price">$18</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="sweet" data-id="jam" data-name="Apricot Preserves" data-price="11.50">
+          <div class="product-image" style="--fallback-1:#E89858; --fallback-2:#A85820;">
+            <img src="https://images.unsplash.com/photo-1597528362316-3b53d7d83a52?auto=format&fit=crop&w=600&q=80" alt="Apricot preserves" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Sweet · France</span>
+              <h3 class="product-name">Apricot Preserves</h3>
+              <p class="product-desc">Small-batch, low sugar. 280g.</p>
+            </div>
+            <span class="product-price">$11.50</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="pasta" data-id="oats" data-name="Steel-cut Oats" data-price="6.50">
+          <div class="product-image" style="--fallback-1:#E8D8B0; --fallback-2:#A88858;">
+            <img src="https://images.unsplash.com/photo-1614961233913-a5113a4a34ed?auto=format&fit=crop&w=600&q=80" alt="Steel-cut oats" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Grains · Scotland</span>
+              <h3 class="product-name">Steel-cut Oats</h3>
+              <p class="product-desc">Stone-cut, hearty. 1kg bag.</p>
+            </div>
+            <span class="product-price">$6.50</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ FOOTER ================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Pantry Lane<span class="dot"></span></div>
+          <p>Small-batch pantry goods from producers we trust, delivered straight to your door.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All products</a></li>
+            <li><a href="shop.html">Oils & vinegars</a></li>
+            <li><a href="shop.html">Pasta & grains</a></li>
+            <li><a href="shop.html">Salts & spices</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Producers</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mega">Pantry<span class="dot"></span>Lane</div>
+      <div class="footer-bottom">
+        <span>© 2026 Pantry Lane · Proof of concept</span>
+        <span><a href="#">Instagram</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================ CART DRAWER ================ -->
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your cart</h3>
+      <button class="cart-close" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span>Subtotal</span><span>$0.00</span></div>
+      <button class="btn btn-primary checkout-btn">Checkout <span class="arrow">→</span></button>
+      <p class="checkout-note">Checkout is disabled in this proof of concept.</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

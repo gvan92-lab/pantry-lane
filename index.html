@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantry Lane — Small-batch pantry goods, delivered</title>
+  <meta name="description" content="Thoughtfully sourced olive oils, pastas, salts, and pantry staples from small producers around the world. Delivered to your door." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================ HEADER ================ -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Pantry Lane<span class="dot"></span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <button class="cart-btn" aria-label="Open cart">
+            <span>Cart</span>
+            <span class="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================ HERO ================ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="eyebrow">Est. 2026 · Brooklyn, NY</span>
+        <h1>Pantry,<br><span class="stroke">reconsidered.</span></h1>
+        <p class="lead">A small, opinionated shelf of the best olive oils, pastas, and staples — sourced direct from the people who make them, then delivered to your door.</p>
+        <div style="display:flex; gap:14px; margin-top:32px; flex-wrap:wrap;">
+          <a href="shop.html" class="btn btn-primary">Shop the pantry <span class="arrow">→</span></a>
+          <a href="about.html" class="btn btn-ghost">Read our story</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item"><strong>16</strong><span>Producers</span></div>
+          <div class="hero-meta-item"><strong>9</strong><span>Countries</span></div>
+          <div class="hero-meta-item"><strong>4.9★</strong><span>2,400 reviews</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-d2">
+        <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=80" alt="Cold-pressed olive oil" loading="eager" />
+        <div class="hero-floating-card">
+          <div class="swatch"></div>
+          <div>
+            <strong>Just landed</strong>
+            <span>Puglia harvest, 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ MARQUEE ================ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Free shipping over $45 <em class="star">✦</em> No mystery ingredients <em class="star">✦</em> Farm-direct sourcing <em class="star">✦</em> Small-batch only <em class="star">✦</em> Carbon-neutral delivery <em class="star">✦</em></span>
+      <span>Free shipping over $45 <em class="star">✦</em> No mystery ingredients <em class="star">✦</em> Farm-direct sourcing <em class="star">✦</em> Small-batch only <em class="star">✦</em> Carbon-neutral delivery <em class="star">✦</em></span>
+    </div>
+  </div>
+
+  <!-- ================ BENTO FEATURES ================ -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Why us</span>
+          <h2 style="margin-top:14px;">Good food, <em>honest</em> story.</h2>
+        </div>
+        <p class="lead">Every product on our shelf is here because we tasted it, met the maker, and would happily eat it ourselves. No exceptions.</p>
+      </div>
+
+      <div class="bento reveal">
+        <div class="bento-item bento-1">
+          <span class="bento-tag">01 — Sourcing</span>
+          <div>
+            <h3>We've personally met every producer on this shelf.</h3>
+            <p>From a 4th-generation olive grove in Puglia to a one-woman bakery in Bushwick — we know who made it, how, and why.</p>
+          </div>
+        </div>
+        <div class="bento-item bento-2">
+          <span class="bento-tag">02 — Shipping</span>
+          <h3>Free over $45. Carbon-neutral.</h3>
+        </div>
+        <div class="bento-item bento-3">
+          <span class="bento-tag">03 — Returns</span>
+          <h3>Love it, or it's on us.</h3>
+          <p>30-day "no questions" guarantee.</p>
+        </div>
+        <div class="bento-item bento-4">
+          <div>
+            <span class="bento-tag">Curated</span>
+            <div class="big-number">16</div>
+          </div>
+          <p>essentials only — no bloat, no filler.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ FEATURED PRODUCTS ================ -->
+  <section style="background: var(--bg-warm);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">This week's picks</span>
+          <h2 style="margin-top:14px;">A taste of <em>what's in.</em></h2>
+        </div>
+        <a href="shop.html" class="btn btn-ghost" style="align-self:end;">See all products <span class="arrow">→</span></a>
+      </div>
+
+      <div class="product-grid reveal">
+
+        <article class="product-card" data-id="oliveoil" data-name="Cold-pressed Olive Oil" data-price="24.00" data-img="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=400&q=80">
+          <div class="product-image" style="--fallback-1:#C8B989; --fallback-2:#7A6B3F;">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80" alt="Cold-pressed olive oil" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Oils · Italy</span>
+              <h3 class="product-name">Cold-pressed Olive Oil</h3>
+            </div>
+            <span class="product-price">$24</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="bronzepasta" data-name="Bronze-cut Rigatoni" data-price="9.50" data-img="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80">
+          <div class="product-image" style="--fallback-1:#E8C98E; --fallback-2:#8C6B30;">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Bronze-cut rigatoni pasta" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Pasta · Italy</span>
+              <h3 class="product-name">Bronze-cut Rigatoni</h3>
+            </div>
+            <span class="product-price">$9.50</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="seasalt" data-name="Flaky Sea Salt" data-price="12.00" data-img="https://images.unsplash.com/photo-1518110925495-b37653ab3fcd?auto=format&fit=crop&w=400&q=80">
+          <div class="product-image" style="--fallback-1:#E8E3D6; --fallback-2:#A8A091;">
+            <img src="https://images.unsplash.com/photo-1518110925495-b37653ab3fcd?auto=format&fit=crop&w=600&q=80" alt="Hand-harvested flaky sea salt" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Salts · France</span>
+              <h3 class="product-name">Flaky Sea Salt</h3>
+            </div>
+            <span class="product-price">$12</span>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="honey" data-name="Wildflower Honey" data-price="16.00" data-img="https://images.unsplash.com/photo-1587049352846-4a222e784e7c?auto=format&fit=crop&w=400&q=80">
+          <div class="product-image" style="--fallback-1:#E8B752; --fallback-2:#A87420;">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784e7c?auto=format&fit=crop&w=600&q=80" alt="Raw wildflower honey" loading="lazy" />
+            <button class="product-quick-add">Add to cart</button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-tag">Sweet · Vermont</span>
+              <h3 class="product-name">Wildflower Honey</h3>
+            </div>
+            <span class="product-price">$16</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ MANIFESTO ================ -->
+  <section style="padding: clamp(40px, 6vw, 80px) 0;">
+    <div class="container">
+      <div class="manifesto reveal">
+        <div>
+          <span class="eyebrow">Our manifesto</span>
+          <h2 style="margin: 18px 0 24px;">The pantry is <em>the heart</em> of the kitchen.</h2>
+          <p>For too long, the staples we use every day have been an afterthought. We're rebuilding the pantry, one shelf at a time — with food made by people who care more about flavor than margins.</p>
+          <a href="about.html" class="btn btn-primary" style="background: var(--cream); color: var(--ink); margin-top: 8px;">More about us <span class="arrow">→</span></a>
+        </div>
+        <div class="manifesto-stats">
+          <div class="manifesto-stat">
+            <strong>4yrs</strong>
+            <span>Tasting & sourcing</span>
+          </div>
+          <div class="manifesto-stat">
+            <strong>0</strong>
+            <span>Mystery ingredients</span>
+          </div>
+          <div class="manifesto-stat">
+            <strong>100%</strong>
+            <span>Producer-direct</span>
+          </div>
+          <div class="manifesto-stat">
+            <strong>30d</strong>
+            <span>Money-back promise</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ NEWSLETTER ================ -->
+  <section>
+    <div class="container">
+      <div class="newsletter reveal">
+        <span class="eyebrow">Newsletter</span>
+        <h2>Get 10% off your first order.</h2>
+        <p class="lead">Recipes, new arrivals, and the occasional pantry hot-take. One email a month, never more.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+          <input type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter-fine">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ FOOTER ================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Pantry Lane<span class="dot"></span></div>
+          <p>Small-batch pantry goods from producers we trust, delivered straight to your door.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All products</a></li>
+            <li><a href="shop.html">Oils & vinegars</a></li>
+            <li><a href="shop.html">Pasta & grains</a></li>
+            <li><a href="shop.html">Salts & spices</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Producers</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mega">Pantry<span class="dot"></span>Lane</div>
+      <div class="footer-bottom">
+        <span>© 2026 Pantry Lane · Proof of concept</span>
+        <span><a href="#">Instagram</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================ CART DRAWER ================ -->
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your cart</h3>
+      <button class="cart-close" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-total"><span>Subtotal</span><span>$0.00</span></div>
+      <button class="btn btn-primary checkout-btn">Checkout <span class="arrow">→</span></button>
+      <p class="checkout-note">Checkout is disabled in this proof of concept.</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
